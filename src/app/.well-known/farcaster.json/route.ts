@@ -5,11 +5,13 @@ export async function GET() {
 
   const config = {
     accountAssociation: {
-      header:
-        "eyJmaWQiOjM2MjEsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgyY2Q4NWEwOTMyNjFmNTkyNzA4MDRBNkVBNjk3Q2VBNENlQkVjYWZFIn0",
-      payload: "eyJkb21haW4iOiJmcmFtZXMtdjIudmVyY2VsLmFwcCJ9",
-      signature:
-        "MHhiNDIwMzQ1MGZkNzgzYTExZjRiOTllZTFlYjA3NmMwOTdjM2JkOTY1NGM2ODZjYjkyZTAyMzk2Y2Q0YjU2MWY1MjY5NjI5ZGQ5NTliYjU0YzEwOGI4OGVmNjdjMTVlZTdjZDc2YTRiMGU5NzkzNzA3YzkxYzFkOWFjNTg0YmQzNjFi",
+      message: {
+        domain: "kmacbeth-uefa-champions-quiz.vercel.app",
+        timestamp: 1738713748,
+        expirationTime: 1746489748
+      },
+      signature: "7850fbbf389af45f5c196cb1cb928760d59f5ecdd1e35592a8fe301e9e7f91f22ed69cf71e4c062eae418b4ca5a81ca8c1da4ea2074b72df4aeec697d0bcf3ee1b",
+      signingKey: "e338c8776987a89c10f561406cbcc24b1cffdf6c3a35810bf9f8c9ea01aef753"
     },
     frame: {
       version: "1",
